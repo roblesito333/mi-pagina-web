@@ -1,0 +1,118 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+#titulo-principal {
+    text-align: center;
+    color: #003366;
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+.subtitulo {
+    color: #003366;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.texto {
+    text-align: center;
+    margin: 10px auto;
+    width: 80%;
+}
+
+#imagen-perfil {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para listas */
+.lista, .lista-ordenada {
+    margin: 10px auto;
+    padding: 0;
+    list-style-position: inside;
+    width: 80%;
+    text-align: center; /* Esto centra el contenido de la lista */
+}
+
+.lista li, .lista-ordenada li {
+    display: inline-block; /* Muestra los elementos de la lista en línea */
+    margin: 5px; /* Espacio entre los elementos */
+    text-align: center; /* Asegura que el contenido de cada ítem esté centrado */
+}
+
+
+#tabla-horarios {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+#tabla-horarios th, #tabla-horarios td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#tabla-horarios th {
+    background-color: #003366;
+    color: white;
+}
+
+form {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form input, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #003366;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #00509e;
+}
+
+footer {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    #imagen-perfil {
+        width: 150px;
+    }
+
+    .texto, .lista, .lista-ordenada, form, #tabla-horarios {
+        width: 95%;
+    }
+
+    #titulo-principal {
+        font-size: 2em;
+    }
+}

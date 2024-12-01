@@ -4,215 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Sobre mi</title>
+    <title>Sobre mí</title>
 </head>
 <body>
-    <h1> Bienvenido a mi pagina web</h1>                      
-    <h2> acerca de mi </h2>
-    <!--Parrafo de introduccion -->
-    <p>En esta pagina web podras conocer acerca de mi, mi vida, mis estudios, hobbies etc.</p>                                                                     
+    <header>
+        <h1 id="titulo-principal">Bienvenido a mi página web</h1>
+    </header>
 
-    <!--Parrafo de presentacion -->
+    <section id="acerca-de-mi">
+        <h2 class="subtitulo">Acerca de mí</h2>
+        <p class="texto">En esta página web podrás conocer acerca de mí, mi vida, mis estudios, hobbies, etc.</p>
+    </section>
 
-    <h3>Presentacion</h3>
-    <p>Mi nombre es <b>Sebastian Alejandro Robles Avendaño</b> tengo 20 años vivo en colombia y soy estudiante de 
-    ING ambiental y sanitarias, Y estudiante de tecnologo ADSO (Analisis y Desarrollo de Software)</p>
+    <section id="presentacion">
+        <h3 class="subtitulo">Presentación</h3>
+        <p class="texto">
+            Mi nombre es <b>Sebastián Alejandro Robles Avendaño</b>, tengo 20 años, vivo en Colombia y soy estudiante de
+            Ingeniería Ambiental y Sanitaria, y estudiante de tecnólogo ADSO (Análisis y Desarrollo de Software).
+        </p>
+        <img id="imagen-perfil" src="Doc1(1).jpg" alt="Foto de Sebastián Robles">
+    </section>
 
-    <!--IMAGEN de PRESENTACION -->
+    <section id="redes-sociales">
+        <h2 class="subtitulo">Mis redes sociales</h2>
+        <ul class="lista">
+            <li><a href="https://www.facebook.com/sebastian.robles.167189">Facebook: Sebastián Robles</a></li>
+            <li><a href="https://www.instagram.com/sebastianrobles_one/">Instagram: sebastianrobles_one</a></li>
+        </ul>
+    </section>
 
-    <img src="Doc1(1).jpg" alt="foto de sebastian robles">
+    <section id="hobbies">
+        <h3 class="subtitulo">Mis hobbies</h3>
+        <ul class="lista">
+            <li>Leer</li>
+            <li>Programar</li>
+            <li>Compartir con mi familia</li>
+        </ul>
+    </section>
 
-    <!--Enlaces a mis redes sociales -->
+    <section id="tareas">
+        <h3 class="subtitulo">Mis Tareas</h3>
+        <ol class="lista-ordenada">
+            <li>Trabajar por las mañanas</li>
+            <li>Practicar temas vistos en clases y programar</li>
+            <li>Entrar a las clases correspondientes</li>
+        </ol>
+    </section>
 
-    <h2>Mis redes sociales</h2>
-    <p>Facebook</p>
-    <a href="https://www.facebook.com/sebastian.robles.167189">Sebastian Robles</a>
-    <p>Instagram</p>
-    <a href="https://www.instagram.com/sebastianrobles_one/">sebastianrobles_one </a>
+    <section id="horario-semanal">
+        <h3 class="subtitulo">Mi horario semanal</h3>
+        <table id="tabla-horarios">
+            <thead>
+                <tr>
+                    <th>Horario</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    <th>Sábado</th>
+                    <th>Domingo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mañana</td>
+                    <td><ul class="lista"><li>Trabajar</li></ul></td>
+                    <td><ul class="lista"><li>Trabajar</li></ul></td>
+                    <td><ul class="lista"><li>Trabajar</li></ul></td>
+                    <td><ul class="lista"><li>Trabajar</li></ul></td>
+                    <td><ul class="lista"><li>Trabajar</li></ul></td>
+                    <td><ul class="lista"><li>Limpiar la casa</li></ul></td>
+                    <td><ul class="lista"><li>Descanso</li></ul></td>
+                </tr>
+                <!-- Más filas según tu contenido -->
+            </tbody>
+        </table>
+    </section>
 
+    <section id="formulario-contacto">
+        <form>
+            <fieldset>
+                <legend>Formulario de contacto</legend>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="contact">Motivo de contacto</label>
+                <input type="text" id="contact" name="contact" required>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </section>
 
-    <!--Lista Desordenada-->
-    <h3>Mis hobbies</h3>
-    
-    <ul>
-        <li>Leer</li>
-        <li>Programar</li>
-        <li>compartir con mi familia</li>
-    </Ul>
-
-
-    <!--Lista ordenada-->
-
-    <h3>Mis Tareas</h3>
-    <ol>
-        <li>Trabajar por las mañanas</li>
-        <li>Practicar temas visto en clases y programar</li>
-        <li>Entrar a las clases correspondientes</li>
-    </ol>
-    <br><br>
-
-    <!--tabla de horarios-->
-
-    <h3>Mi horario semanal </h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Horario</th>
-                <th>Lunes</th>
-                <th>Martes</th>
-                <th>Miércoles</th>
-                <th>Jueves</th>
-                <th>Viernes</th>
-                <th>Sábado</th>
-                <th>Domingo</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Mañana</td>
-                <td>
-                    <ul>
-                        <li>Trabajar</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Trabajar</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Trabajar</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Trabajar</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Trabajar</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Limpiar la casa</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Descanso</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Tarde</td>
-                <td>
-                    <ul>
-                        <li>Trabajo en proyecto</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Práctica de temas visto en clases</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Estudiar programacion</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Estudiar materias</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Clase de la u</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Comprar víveres</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Película familiar</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Noche</td>
-                <td>
-                    <ul>
-                        <li>Clases de talento tech</li>
-                        <li>Leer la Biblia</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Clases de talento tech</li>
-                        <li>Revisar pendientes</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Clases de talento tech</li>
-                        <li>Meditación</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Clases de talento tech</li>
-                        <li>Planear el día siguiente</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Clases de talento tech</li>
-                        <li>Tiempo en familia</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Lectura relajante</li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>Descanso</li>
-                    </ul>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    
-    <!--formulario de contacto-->
-
-    <form action="">
-        <fieldset>
-            <legend>
-                formulario de contacto
-            </legend>
-            <label for="name">nombre</label>
-            <input type="text" id="name" name="name" required>
-            <br><br>
-            <label for="contact">Porque desea contactame</label>
-            <input type="text" id="contact" name="contact" required>
-            <br><br>
-            <label for="email">email</label>
-            <input type="email" id="email" name="email" required>
-            <br><br>
-            <button type="submit">Enviar</button>
-        </fieldset>
-        <br>
-
-    </form>
-
-    <p> &copy; 2024 mi pagina web</p>
-
+    <footer>
+        <p id="copyright">&copy; 2024 Mi página web</p>
+    </footer>
 </body>
 </html>
